@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  background: #fff0f6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.navbar, .footer {
+  padding: 1rem;
+  background: #ff99cc;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+button {
+  background: #ff66aa;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
