@@ -59,7 +59,7 @@ export default function Header() {
         {user ? (
           <>
             <span>Sveiki, {user.username}</span>
-            <Link to="/ask">Naujas klausimas</Link>
+            <Link to="/ask">Įrašyti miestą</Link>
             <Link to="/profile">Profilis</Link>
             <button onClick={logout}>Atsijungti</button>
           </>

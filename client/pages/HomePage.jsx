@@ -67,7 +67,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <h2>Visi klausimai</h2>
+      <h2>Ką aplankyti Lietuvoje</h2>
 
       <label>Rikiuoti:</label>
       <select onChange={(e) => setSort(e.target.value)} value={sort}>
