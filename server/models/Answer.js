@@ -35,11 +35,6 @@ const answerSchema = new mongoose.Schema(
   }
 );
 
-// Galima pridėti virtual fields (nebūtina):
-// answerSchema.virtual('likeCount').get(function () {
-//   return this.likes.length;
-// });
-
 module.exports = mongoose.model('Answer', answerSchema);
 
 

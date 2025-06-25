@@ -13,7 +13,7 @@ exports.addAnswer = async (req, res) => {
 
     const answer = new Answer({
       question: questionId,
-      author: req.user._id, // 👈 užtikrinam kad yra prisijungęs
+      author: req.user._id, // užtikrinam kad yra prisijungęs
       content,
     });
 
@@ -25,7 +25,7 @@ exports.addAnswer = async (req, res) => {
   }
 };
 
-// ✏️ Atnaujinti atsakymą
+// Atnaujinti atsakymą
 exports.updateAnswer = async (req, res) => {
   try {
     const answer = await Answer.findById(req.params.id);
@@ -46,7 +46,7 @@ exports.updateAnswer = async (req, res) => {
   }
 };
 
-// ❌ Ištrinti atsakymą
+//  Ištrinti atsakymą
 exports.deleteAnswer = async (req, res) => {
   try {
     const answer = await Answer.findById(req.params.id);
@@ -64,7 +64,7 @@ exports.deleteAnswer = async (req, res) => {
   }
 };
 
-// 👍 Like atsakymui
+//  Like atsakymui
 exports.likeAnswer = async (req, res) => {
   try {
     const answer = await Answer.findById(req.params.id);
@@ -85,7 +85,7 @@ exports.likeAnswer = async (req, res) => {
   }
 };
 
-// 👎 Dislike atsakymui
+//  Dislike atsakymui
 exports.dislikeAnswer = async (req, res) => {
   try {
     const answer = await Answer.findById(req.params.id);

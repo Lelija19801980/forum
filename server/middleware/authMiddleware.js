@@ -16,8 +16,8 @@ module.exports = async (req, res, next) => {
       return res.status(401).json({ message: 'Vartotojas nerastas' });
     }
 
-    req.user = user; // 👈 turės user._id
-    req.userId = user._id; // 👈 papildomai pridėta suderinamumui
+    req.user = user; //  turės user._id
+    req.userId = user._id; //  papildomai pridėta suderinamumui
     next();
   } catch (err) {
     console.error('❌ Auth klaida:', err);
